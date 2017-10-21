@@ -5,23 +5,54 @@
     <title>Colmar Academy</title>
     <link href="./resources/css/reset.css" rel="stylesheet" type="text/css" />
     <link href="./resources/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="./resources/css/dynamic.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <header>
       <div class="container head">
-        <div class="container logo">
-          <img src="./resources/logos/ic-logo.svg" />
-          <p>COLMAR<span>ACADEMY</span></p>
+        <div class="desktop">
+          <div class="container logo">
+            <img src="./resources/logos/ic-logo.svg" />
+            <p>COLMAR<span>ACADEMY</span></p>
+          </div>
         </div>
         <div class="container nav">
           <ul>
-            <li><a href="#">On campus</a></li>
-            <li><a href="#">Online</a></li>
-            <li><a href="#">For companies</a></li>
-            <li><a href="#">Sign in</a></li>
+            <li class="mobile"><a href="#"><img src="./resources/logos/ic-logo.svg" /></a></li>
+            <li><a href="#"><span class="mobile"><img src="./resources/logos/ic-on-campus.svg" /></span><span class="desktop">On campus</span></a></li>
+            <li><a href="#"><span class="mobile"><img src="./resources/logos/ic-online.svg" /></span><span class="desktop">Online</span></a></li>
+            <li class="desktop"><a href="#">For companies</a></li>
+            <li><a href="#"><span class="mobile"><img src="./resources/logos/ic-login.svg" /></span><span class="desktop">Sign in</span></a></li>
           </ul>
         </div>
       </div>
     </header>
+    <div class="banner">
+      <div class="pic A">
+        <img src="./resources/images/banner.jpg" />
+      </div>
+      <div class="text">
+        <div class="center">
+          <div class="container">
+            <h1>Learn Something</br> new everyday</h1>
+          </div>
+          <div class="container">
+            <h2>Lorem ipsum dolor sit amet,</br> consectetur adipiscing elit.</h2>
+          </div>
+          <div class="container">
+            <div class="btn start">
+              <a href="#">Start here</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="info">
+      <div class="desktop">
+        <div class="pic B">
+          <img src="./resources/images/information-main.jpg" />
+        </div>
+      </div>
+    </div>
   </body>
 </html>
