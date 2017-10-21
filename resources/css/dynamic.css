@@ -62,11 +62,11 @@
     flex-direction: column;
   }
 
-  .banner .pic.A, .banner .text {
+  .banner .pic.A, .banner .text.A {
     width: 100%;
   }
 
-  .banner .text {
+  .banner .text.A {
     padding: 1.25rem 1rem;
   }
 

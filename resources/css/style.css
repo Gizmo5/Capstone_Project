@@ -4,11 +4,49 @@ html {
 }
 
 body {
-  font-family: monospace;
+  font-family: 'Ubuntu Mono', monospace;
   display: block;
+  color:rgba(60,60,60,0.95);
+  /*color:rgba(210,210,210,0.8);*/
 }
 
+/*serif fonts*/
+.seriftext {
+  font-family: 'Bree Serif', serif;
+}
+
+/*large pictures*/
+.pic {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+/*medium size background pictures*/
+
+
+/*small pictures*/
+.pic.small {
+    width: 35%;
+}
+
+img.big, .pic.small img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+
 /*---------------Text & text-headers---------------*/
+
+/*text containers*/
+.container {
+  padding: 0.75rem 0rem;
+}
+
+.container.small {
+  padding: 0.5rem 0rem;
+}
 h1 {
     font-size: 4rem;
     font-weight: bold;
@@ -20,17 +58,19 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: bold;
 }
 
 a {
   text-decoration: none;
+  color:rgba(0,127,255,0.95);
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 /*--------------------Header---------------------*/
 header {
   display: flex;
-  align-items: center;
   z-index: 10;
   width: 100%;
   position: fixed;
@@ -41,19 +81,23 @@ header .container.head {
   display: flex;
   width: 100%;
   padding: 1rem 1.5rem;
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.8);
+  align-items: center;
 }
 
 header .container.logo {
   display: inline-flex;
   height: 2rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  padding:0rem;
+  align-items: center;
 }
 
 header .container.nav {
   width: 100%;
   height: 2rem;
   font-size: 1.5rem;
+  padding:0rem;
 }
 
 header ul{
@@ -70,29 +114,19 @@ header .container.logo p {
   font-weight: 900;
 }
 header .container.logo p span{
-  color: grey;
+  color:rgba(150,150,150,0.9);
 }
 /*------------------------------------------------------*/
 
 /*-----------------banner------------------------------*/
 .banner {
-  top: 4rem;
   width: 100%;
-  padding: 6rem 1.5rem 2rem 1.5rem;
+  padding-top: 4rem;
   display: flex;
-  background-color: grey;
+  background-color: rgba(210,210,210,0.8);
 }
 
-.banner .pic.A {
-  width: 60%;
-}
-.banner img{
-  width: 100%;
-  height: auto;
-}
-
-.banner .text {
-  padding: 2rem 4.5rem 2rem 1.5rem;
+.banner .text.A {
   display: flex;
   width: 40%;
   flex-direction: column;
@@ -100,17 +134,75 @@ header .container.logo p span{
   justify-content: center;
 }
 
-.banner .text .container {
-  padding: 0.75rem 0rem;
-}
-
 .banner .btn {
   padding: 0.5rem 0rem;
-  background-color: black;
+  background-color: rgba(60,60,60,0.95);
   text-align: center;
+  border-radius: 5px;
 }
 
 .banner .btn a {
   color: white;
   font-size: 2rem;
+}
+
+/*------------------the info board----------*/
+.info {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  padding: 2rem 0rem;
+}
+
+.info .desktop {
+  flex-wrap: wrap;
+  width: 60%;
+  padding: 0rem 1.5rem;
+}
+
+.info .desktop .pic.B {
+  width: 100%;
+  padding: 0rem;
+}
+.info .desktop h1.seriftext {
+  padding-top: 1.25rem;
+}
+
+p.signature{
+  padding-top: 2rem;
+  font-weight: bold;
+}
+
+.info .infotabs {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.info .infotabs .tab {
+  display: flex;
+  width: 100%;
+}
+
+.info .infotabs .tab.A, .info .infotabs .tab.A img, .pic.small.A {
+  padding-top: 0rem;
+}
+
+.info .infotabs .tab.C {
+  background-color: rgba(210,210,210,0.8);
+  border-radius: 5px;
+}
+
+.info .infotabs .tab img {
+  width: 100%;
+  padding: 1rem;
+}
+
+.info .infotabs .tab .tabtext {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
 }
