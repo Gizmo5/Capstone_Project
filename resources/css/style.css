@@ -68,6 +68,11 @@ a {
   font-weight: bold;
   font-size: 1.5rem;
 }
+
+a:hover {
+    color:rgba(60,60,60,0.95);
+    transition: color 0.3s ease-in;
+}
 /*--------------------Header---------------------*/
 header {
   display: flex;
@@ -123,7 +128,7 @@ header .container.logo p span{
   width: 100%;
   padding-top: 4rem;
   display: flex;
-  background-color: rgba(210,210,210,0.8);
+  background-color: rgba(100,170,255,0.5);
 }
 
 .banner .text.A {
@@ -141,6 +146,11 @@ header .container.logo p span{
   border-radius: 5px;
 }
 
+.btn:hover {
+  background-color: rgba(0,127,255,0.95);
+  transition: background-color 0.2s ease-in 0.2s;
+}
+
 .banner .btn a {
   color: white;
   font-size: 2rem;
@@ -149,7 +159,7 @@ header .container.logo p span{
 /*------------------the info board----------*/
 .info {
   width: 100%;
-  background-color: white;
+  background-color: rgba(100,170,255,0.45);
   display: flex;
   padding: 2rem 0rem;
 }
@@ -190,7 +200,7 @@ p.signature{
 }
 
 .info .infotabs .tab.C {
-  background-color: rgba(210,210,210,0.8);
+  background-color: rgba(100,170,255,0.2);
   border-radius: 5px;
 }
 
