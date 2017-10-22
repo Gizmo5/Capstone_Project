@@ -28,12 +28,13 @@
     font-size: 1rem;
   }
 }
-
+/*-------------for desktop----------------*/
 @media only screen and (min-width: 831px) {
   .mobile {
     display: none;
   }
 }
+
 /*-----------------mobile screens---------*/
 @media  only screen and (max-width: 830px) {
   .desktop {
@@ -95,6 +96,31 @@
     margin: 1rem 1rem 4rem 2rem;
   }
 
+  /*--------learning section------------*/
+  .learning {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .btn.mcontainer {
+    padding: 1rem 1rem 1.5rem 1rem;
+    background-color: rgba(180, 180, 180, 0.8);
+    border-radius: 5px;
+    margin: 0.5rem 0rem;
+  }
+
+  .btn.mcontainer.A {
+    margin-top: 0rem;
+  }
+
+  .learning .mobile a .btn.mcontainer  {
+    color:rgba(60,60,60,0.95);
+  }
+
+  .learning .mobile a .btn.mcontainer:hover {
+    background-color: rgba(0,127,255,0.4);
+    transition: background-color 0.2s ease-in 0.2s;
+ }
 }
 
 @media only screen and (max-width: 820px) {
