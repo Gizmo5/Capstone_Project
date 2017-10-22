@@ -25,15 +25,16 @@ body {
 
 
 /*small pictures*/
-.pic.small {
+.picsmall {
     width: 35%;
+    padding: 1rem;
 }
 
-img.big, .pic.small img {
+img.big, .picsmall img {
   width: 100%;
   height: auto;
   overflow: hidden;
-  border-radius: 25px;
+  border-radius: 15px;
 }
 
 
@@ -59,7 +60,6 @@ h2 {
 
 h3 {
   font-size: 1.25rem;
-  font-weight: bold;
 }
 
 a {
@@ -73,49 +73,64 @@ a:hover {
     color:rgba(60,60,60,0.95);
     transition: color 0.3s ease-in;
 }
-/*--------------------Header---------------------*/
-header {
+/*------------Header & footer --------------------*/
+header, footer {
   display: flex;
   z-index: 10;
   width: 100%;
+}
+
+header {
   position: fixed;
   height: 4rem;
 }
 
-header .container.head {
+footer {
+  height: 6rem;
+}
+
+footer .desktop {
+  width: 100%;
+}
+
+header .container.head, footer .container.head {
   display: flex;
   width: 100%;
   padding: 1rem 1.5rem;
   background-color: rgba(255,255,255,0.8);
+}
+
+header .container.head, header .container.logo  {
   align-items: center;
 }
 
-header .container.logo {
+
+header .container.logo, footer .container.logo {
+  width: 100%;
   display: inline-flex;
   height: 2rem;
   font-size: 1.5rem;
   padding:0rem;
-  align-items: center;
 }
 
-header .container.nav {
+header .container.nav, footer .container.nav {
   width: 100%;
   height: 2rem;
   font-size: 1.5rem;
   padding:0rem;
 }
 
-header ul{
+header ul, footer ul{
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
 }
 
-header ul li {
+header ul li, footer ul li {
   margin-left: 16px;
 }
 
-header .container.logo p {
+header .container.logo p, footer .container.logo p {
   font-weight: 900;
 }
 header .container.logo p span{
@@ -161,13 +176,13 @@ header .container.logo p span{
   width: 100%;
   background-color: rgba(100,170,255,0.45);
   display: flex;
-  padding: 2rem 0rem;
+  padding: 1rem 0rem;
 }
 
 .info .desktop {
   flex-wrap: wrap;
   width: 60%;
-  padding: 0rem 1.5rem;
+  padding: 1rem 1.5rem 0rem 1.5rem;
 }
 
 .info .desktop .pic.B {
@@ -183,33 +198,33 @@ p.signature{
   font-weight: bold;
 }
 
-.info .infotabs {
+.info img.desktop {
+  padding: 0rem;
+}
+
+/*-----------------All small picture tabs related--------*/
+.infotabs {
   width: 40%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.info .infotabs .tab {
+.infotabs .tab {
   display: flex;
   width: 100%;
 }
 
-.info .infotabs .tab.A, .info .infotabs .tab.A img, .pic.small.A {
-  padding-top: 0rem;
-}
-
-.info .infotabs .tab.C {
+.infotabs .tab.C, .infotabs .tab.D {
   background-color: rgba(100,170,255,0.2);
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
-.info .infotabs .tab img {
+.infotabs .tab img {
   width: 100%;
-  padding: 1rem;
 }
 
-.info .infotabs .tab .tabtext {
+.infotabs .tab .tabtext {
   width: 65%;
   display: flex;
   flex-direction: column;
@@ -220,7 +235,7 @@ p.signature{
 /*-----------------the learning board--------------*/
 .learning {
   display: flex;
-  padding: 2rem 3rem;
+  padding: 2rem 4.5rem;
   background-color: rgba(100,170,255,0.5);
   flex-direction: column;
 }
@@ -230,7 +245,7 @@ p.signature{
 .headline {
   width: 100%;
   text-align: center;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 .grid {
@@ -238,7 +253,7 @@ p.signature{
   background-color: rgba(100,170,255,0.1);
   display: flex;
   flex-direction: column;
-  border-radius: 25px;
+  border-radius: 15px;
 }
 
 .row {
@@ -247,6 +262,21 @@ p.signature{
 
 .tcontainer{
   padding: 1rem;
+}
+.tcontainer.A, .tcontainer.B, .tcontainer.C {
+  padding-top: 0rem;
+}
+
+.tcontainer.C, .tcontainer.F {
+  padding-right: 0rem;
+}
+
+.tcontainer.D, .tcontainer.E, .tcontainer.F {
+  padding-bottom: 0rem;
+}
+
+.tcontainer.A, .tcontainer.D {
+  padding-left: 0rem;
 }
 
 .tcontainer:hover {
@@ -265,4 +295,42 @@ p.signature{
 
 .tcontainer h3.seriftext {
   padding: 0.5rem 0rem;
+}
+
+/*----------------Thesis section-----------------------*/
+.thesis {
+    display: flex;
+    padding: 2rem 0rem 2rem 1.5rem;
+    background-color: rgba(100,170,255,0.35);
+    flex-direction: column;
+}
+
+.thesis .desktop {
+  width: 100%;
+  display: flex;
+}
+
+.thesis .desktop .maincontainer {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 1.5rem;
+}
+
+.thesis .desktop .maincontainer .video{
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.thesis .desktop .maincontainer video{
+  width: 100%;
+  height: auto;
+}
+
+.text.C {
+  padding-top: 1rem;
+}
+.text.C .container {
+  padding-top: 0.5rem;
+  padding-bottom: 0rem;
 }
